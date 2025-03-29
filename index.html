@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- AI Video Background -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="Assest/bg_ai.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1>Jarvis AI</h1>
+        <p class="subtitle">Hello! How can I assist you?</p>
+
+        <!-- Chat History -->
+        <div id="chatHistory"></div>
+
+
+        <!-- Voice Input -->
+        <div class="mic-container">
+            <button id="micButton">
+                <img src="Assest/microphone.png" alt="Microphone">
+            </button>
+        </div>
+
+        <!-- Clear Chat Button -->
+        <button id="clearChat" onclick="clearHistory()">Clear Chat</button>
+    </div>
+
+</body>
+</html>
